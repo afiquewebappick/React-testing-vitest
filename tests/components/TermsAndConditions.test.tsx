@@ -25,7 +25,6 @@ describe('TermsAndConditions', () => {
     const checkBox = screen.getByRole('checkbox');
     const user = userEvent.setup();
     await user.click(checkBox);
-
     expect(screen.getByRole('button')).toBeEnabled();
   })
 });
